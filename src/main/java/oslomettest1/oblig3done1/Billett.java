@@ -8,6 +8,7 @@ import lombok.*;//bruker lombok så jeg slipper overflødig kode
 @AllArgsConstructor
 
 
+
 public class Billett {
 
     private Long billettNr;
