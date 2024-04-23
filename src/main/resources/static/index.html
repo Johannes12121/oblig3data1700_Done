@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kinobilett</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<a href="index.html">Kjøpe siden</a>
+<br>
+<a href="poppopp.html">billetter siden</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>kinobilett</h3>
+            <form class="form">
+                <div class="form-group">
+                    <label for="film">Velg film: </label>
+                    <select id="film" name="film" class="form-control">
+                        <option></option>
+                        <option>Kongens nei</option>
+                        <option>american pie</option>
+                        <option>cars</option>
+                        <option>dory</option>
+                        <option>spiderman</option>
+                        <option>kampen om narvik</option>
+                    </select>
+                    <p class="has-error" id="filmError" style="color: red"></p>
+
+                    <label for="antall">Antall: </label>
+                    <input type="number" class="form-control" id="antall" name="antall">
+                    <p class="has-error" id="antallError" style="color: red"></p>
+
+                    <label for="fornavn">Fornavn: </label>
+                    <input type="text" class="form-control" id="fornavn" name="fornavn">
+                    <p class="has-error" id="fornavnError" style="color: red"></p>
+
+                    <label for="etternavn">Etternavn: </label>
+                    <input type="text" class="form-control" id="etternavn" name="etternavn">
+                    <p class="has-error" id="etternavnError" style="color: red"></p>
+
+                    <label for="telefon">Telefonnr: </label>
+                    <input type="number" class="form-control" id="telefon" name="telefon">
+                    <p class="has-error" id="telefonError" style="color: red"></p>
+
+                    <label for="epost">Epost: </label>
+                    <input type="text" class="form-control" id="epost" name="epost">
+                    <p class="has-error" id="epostError" style="color: red"></p>
+                </div>
+            </form>
+            <button class="btn btn-primary" id="kjop">Registrer</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="kode.js"></script>
+</body>
+</html>

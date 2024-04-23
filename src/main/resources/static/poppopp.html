@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilett</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<a href="index.html">Kjøpe siden</a>
+<br>
+<a href="poppopp.html">billetter siden</a>
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <h3>Alle billettene:</h3>
+            <button class="btn btn-primary" onclick="hentAlle()">Hent billetter</button>
+            <br>
+            <div id="ut"></div> <button class="btn btn-danger" id="slett">Slett alle billetter</button>
+            <div style=" width:300px; display: none;" id="minDiv">
+                <br>
+                <h2 class="title"> Oppdater billett </h2>
+                <p style="font-weight: bolder">ID NR:</p><p id="billettNr"></p>
+                <label for="filmEdit">Film navn</label><br>
+                <select id="filmEdit" name="filmEdit" class="form-control">
+                    <option>Kongens nei</option>
+                    <option>american pie</option>
+                    <option>cars</option>
+                    <option>dory</option>
+                    <option>spiderman</option>
+                    <option>kampen om narvik</option>
+                </select>
+                <p id="filmEditError" style="color: red"></p><br>
+
+                <label for="antallEdit">Antall</label><br>
+                <input class="form-control" type="number" id="antallEdit"><br>
+                <p id="antallEditError" style="color: red"></p><br>
+
+                <label for="fornavnEdit">Fornavn</label><br>
+                <input class="form-control" type="text" id="fornavnEdit"><br>
+                <p id="fornavnEditError" style="color: red"></p><br>
+
+                <label for="etternavnEdit">Etternavn</label><br>
+                <input class="form-control" type="text" id="etternavnEdit"><br>
+                <p id="etternavnEditError" style="color: red"></p><br>
+
+                <label for="telefonEdit">Telefon</label><br>
+                <input class="form-control" type="number" id="telefonEdit"><br>
+                <p id="telefonEditError" style="color: red"></p><br>
+
+                <label for="epostEdit">Epost</label><br>
+                <input class="form-control" type="text" id="epostEdit"><br>
+                <p id="epostEditError" style="color: red"></p><br>
+                <br>
+                <button class="btn btn-primary" id="oppdater" onclick="oppdaterBillettiDB()">Oppdater</button>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="nr2.js"></script>
+</body>
+</html>
